@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mi primer formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body><br>
+    <form class="container">
+      <div class="row">
+        <select name="documento" id="documento">
+          <option value="N" selected> Tipo de Documento </option>
+          <option value="1">Cedula de Ciudadania</option>
+          <option value="2">Tarjeta de identidad</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label></label>
+      </div>
+
+      <div class="row">
+        <input type="text" placeholder="Numero de identificación" />
+      </div><br>
+
+      <div class="row">
+        <input type="text" placeholder="Ingrese su nombre" onkeypress="return isNumberKey(event)" 
+    maxlength="40"/>
+      </div><br>
+
+      <div class="row">
+        <input type="text" placeholder="Ingrese su apellido" onkeypress="return isNumberKey(event)" 
+    maxlength="40"/>
+      </div><br>
+
+      <div class="row">
+        <input type="text" placeholder="Ingrese su correo" />
+      </div><br>
+
+      <label for="texto1">Seleccione su Genero</label><br>
+
+      <div class="row">
+        <input type="radio" id="M" name="GM" value="M">
+        <label >Masculino</label>
+        <input type="radio" id="F" name="F" value="F">
+        <label >Femenino</label>
+      </div><br>
+
+      <div class="row">
+        <input type="text" placeholder="Ingrese su profesión" />
+      </div><br>
+
+      <label for="texto1">Esriba su perfil</label><br>
+      <textarea perfil="texto2"></textarea><br><br>
+
+      <label for="texto3">Seleccione su Hobie/Hobies</label><br>
+
+      <label><input type="checkbox" id="cbox1" value="caminar">Caminar</label><br>
+
+      <input type="checkbox" id="cbox2" value="ejercicio"> <label for="cbox2">Ejercicio</label><br>
+
+      <input type="checkbox" id="cbox2" value="ciclismo"> <label for="cbox3">Ciclismo</label><br>
+
+      <input type="checkbox" id="cbox2" value="futbol"> <label for="cbox4">Futbol</label><br>
+
+      <input type="checkbox" id="cbox2" value="tejo"> <label for="cbox5">Tejo</label><br><br>
+
+      <label for="texto4">¿Tiene experencias laborales?</label><br>
+
+      <label><input type="checkbox" id="cbox6" value="si">Si</label>
+
+      <input type="checkbox" id="cbox2" value="no"> <label for="cbox7">No</label><br><br>
+
+      <input type="button" value="Enviar">
+      <input type="button" value="Cancelar">
+
+    </form>
+  </body>
+</html>
+
+
